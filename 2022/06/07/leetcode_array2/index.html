@@ -4,13 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="test, YC">
-    <meta name="description" content="Write Something For Testing&amp;#x2F;paragraph 
-$this is an equation$
-​	x^2 &amp;#x3D; 2
-&amp;#x2F;end{equation}
-$x*2$
- $f(x)&amp;#x3D;x">
+    <meta name="keywords" content="Leetcode Array - Longest Consecutive Sequence Related, YC">
+    <meta name="description" content="Leetcode Array - Longest Consecutive Sequence Relatedleetcode 128, 2177, 2274
+TAGS: Array, HashMap
+leetcode 128. Longest">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +21,7 @@ $x*2$
 
     
 
-    <title>test | YC</title>
+    <title>Leetcode Array - Longest Consecutive Sequence Related | YC</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -275,7 +272,7 @@ $x*2$
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">test</h1>
+                    <h1 class="description center-align post-title">Leetcode Array - Longest Consecutive Sequence Related</h1>
                 </div>
             </div>
         </div>
@@ -391,8 +388,12 @@ $x*2$
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/ceshi/">
-                                <span class="chip bg-color">ceshi</span>
+                            <a href="/tags/Array/">
+                                <span class="chip bg-color">Array</span>
+                            </a>
+                        
+                            <a href="/tags/HashMap/">
+                                <span class="chip bg-color">HashMap</span>
                             </a>
                         
                     </div>
@@ -403,8 +404,12 @@ $x*2$
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/diyi/" class="post-category">
-                                diyi
+                            <a href="/categories/leetcode/" class="post-category">
+                                leetcode
+                            </a>
+                        
+                            <a href="/categories/leetcode/algorithm/" class="post-category">
+                                algorithm
                             </a>
                         
                     </div>
@@ -416,7 +421,7 @@ $x*2$
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-04-28
+                    2022-06-07
                 </div>
                 
 
@@ -440,26 +445,138 @@ $x*2$
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Write-Something-For-Testing"><a href="#Write-Something-For-Testing" class="headerlink" title="Write Something For Testing"></a>Write Something For Testing</h2><p>&#x2F;paragraph </p>
-<p>$this is an equation$</p>
-<p>​	x^2 &#x3D; 2</p>
-<p>&#x2F;end{equation}</p>
-<p>$x*2$</p>
-<p> $f(x)&#x3D;x_{1}^{2}+x_{2}^{2}$ </p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">To explain<span class="token punctuation">,</span> lets assume that $\text<span class="token punctuation">&#123;</span>rev<span class="token punctuation">&#125;</span>$ <span class="token keyword">is</span> positive<span class="token punctuation">.</span>
+                <h1 id="Leetcode-Array-Longest-Consecutive-Sequence-Related"><a href="#Leetcode-Array-Longest-Consecutive-Sequence-Related" class="headerlink" title="Leetcode Array - Longest Consecutive Sequence Related"></a>Leetcode Array - Longest Consecutive Sequence Related</h1><p>leetcode 128, 2177, 2274</p>
+<p><strong>TAGS: Array, HashMap</strong></p>
+<h3 id="leetcode-128-Longest-Consecutive-Sequence"><a href="#leetcode-128-Longest-Consecutive-Sequence" class="headerlink" title="leetcode 128. Longest Consecutive Sequence"></a>leetcode 128. Longest Consecutive Sequence</h3><p>Given an unsorted array of integers <code>nums</code>, return <em>the length of the longest consecutive elements sequence.</em></p>
+<p>You must write an algorithm that runs in <code>O(n)</code> time.</p>
+<p><strong>Example 1:</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">Input: nums &#x3D; [100,4,200,1,3,2]
+Output: 4
+Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<span class="token number">1.</span> If $temp<span class="token operator">=</span>rev\cdot10<span class="token operator">+</span>pop$ causes overflow<span class="token punctuation">,</span> then it must be that $rev\geq\frac<span class="token punctuation">&#123;</span>INTMAX<span class="token punctuation">&#125;</span><span class="token punctuation">&#123;</span><span class="token number">10</span><span class="token punctuation">&#125;</span>$
-<span class="token number">2.</span> If $rev<span class="token operator">></span>\frac<span class="token punctuation">&#123;</span>INTMAX<span class="token punctuation">&#125;</span><span class="token punctuation">&#123;</span><span class="token number">10</span><span class="token punctuation">&#125;</span>$<span class="token punctuation">,</span> then $temp<span class="token operator">=</span>rev\cdot10<span class="token operator">+</span>pop$ <span class="token keyword">is</span> guaranteed to overflow<span class="token punctuation">.</span>
-<span class="token number">3.</span> If $rev<span class="token operator">==</span>\frac<span class="token punctuation">&#123;</span>INTMAX<span class="token punctuation">&#125;</span><span class="token punctuation">&#123;</span><span class="token number">10</span><span class="token punctuation">&#125;</span>$<span class="token punctuation">,</span> then $temp<span class="token operator">=</span>rev\cdot10<span class="token operator">+</span>pop$ will overflow <span class="token keyword">if</span> <span class="token keyword">and</span> only <span class="token keyword">if</span> $pop<span class="token operator">></span><span class="token number">7</span>$
+<h4 id="My-approach-1"><a href="#My-approach-1" class="headerlink" title="My approach 1:"></a>My approach 1:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">longestConsecutive</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type nums: List[int]
+        :rtype: int
+        """</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> nums<span class="token punctuation">:</span>
+            <span class="token keyword">return</span> <span class="token number">0</span>
+        nums<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        max_count <span class="token operator">=</span> <span class="token number">1</span>
+        count <span class="token operator">=</span> <span class="token number">1</span>
 
-Similar logic can be applied when $\text<span class="token punctuation">&#123;</span>rev<span class="token punctuation">&#125;</span>$ <span class="token keyword">is</span> negati<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> nums<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">-</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
+                count <span class="token operator">+=</span> <span class="token number">1</span>
+            <span class="token keyword">elif</span> nums<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">:</span>
+                <span class="token keyword">continue</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                count <span class="token operator">=</span> <span class="token number">1</span>
 
-<p>$$<br>x^2 is trash<br>$$</p>
-<pre class="line-numbers language-latex" data-language="latex"><code class="language-latex">/begin<span class="token punctuation">&#123;</span>equation<span class="token punctuation">&#125;</span>
-	<span class="token equation string">$x^2$</span>
-/end<span class="token punctuation">&#123;</span>equation<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+            max_count <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>count<span class="token punctuation">,</span> max_count<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> max_count<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>asd</p>
+<p>Time complexity: O(nlogn)</p>
+<p>Space complexity: O(1)</p>
+<h4 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li>sort and loop through the array to check if consecutive</li>
+</ul>
+<h4 id="My-approach-2"><a href="#My-approach-2" class="headerlink" title="My approach 2:"></a>My approach 2:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">longestConsecutive</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type nums: List[int]
+        :rtype: int
+        """</span>
+
+        count <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+        visited <span class="token operator">=</span> <span class="token punctuation">&#123;</span><span class="token punctuation">&#125;</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> nums<span class="token punctuation">:</span> <span class="token keyword">return</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> num <span class="token keyword">in</span> nums<span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token keyword">not</span> num <span class="token keyword">in</span> count<span class="token punctuation">:</span>
+                count<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
+                visited<span class="token punctuation">[</span>num<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">0</span>
+
+        <span class="token keyword">for</span> key <span class="token keyword">in</span> count<span class="token punctuation">:</span>
+            curr <span class="token operator">=</span> key
+            <span class="token keyword">while</span> curr<span class="token operator">+</span><span class="token number">1</span> <span class="token keyword">in</span> count <span class="token keyword">and</span> visited<span class="token punctuation">[</span>curr<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                curr <span class="token operator">+=</span> <span class="token number">1</span>
+                count<span class="token punctuation">[</span>key<span class="token punctuation">]</span> <span class="token operator">+=</span> count<span class="token punctuation">[</span>curr<span class="token punctuation">]</span>
+                visited<span class="token punctuation">[</span>curr<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">1</span>
+        <span class="token keyword">return</span> <span class="token builtin">max</span><span class="token punctuation">(</span>count<span class="token punctuation">.</span>values<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Time complexity: O(n)</p>
+<p>Space complexity: O(n)</p>
+<h4 id="Idea-1"><a href="#Idea-1" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li>build two hashmap for counting and checking visited </li>
+<li>for each key in hashmap, continuously check if key+1 is in hashmap, then update the count val<ul>
+<li>update the visiting hashmap while checking the key (so the key will only be visited once, which makes it O(n))</li>
+</ul>
+</li>
+</ul>
+<h3 id="leetcode-2177-Find-Three-Consecutive-Integers-That-Sum-to-a-Given-Number"><a href="#leetcode-2177-Find-Three-Consecutive-Integers-That-Sum-to-a-Given-Number" class="headerlink" title="leetcode 2177. Find Three Consecutive Integers That Sum to a Given Number"></a>leetcode 2177. Find Three Consecutive Integers That Sum to a Given Number</h3><p>Given an integer <code>num</code>, return <em>three consecutive integers (as a sorted array)</em> <em>that <strong>sum</strong> to</em> <code>num</code>. If <code>num</code> cannot be expressed as the sum of three consecutive integers, return <em>an <strong>empty</strong> array.</em></p>
+<p><strong>Example 1:</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">Input: num &#x3D; 33
+Output: [10,11,12]
+Explanation: 33 can be expressed as 10 + 11 + 12 &#x3D; 33.
+10, 11, 12 are 3 consecutive integers, so we return [10, 11, 12].<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="My-approach"><a href="#My-approach" class="headerlink" title="My approach:"></a>My approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">sumOfThree</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> num<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type num: int
+        :rtype: List[int]
+        """</span>
+        <span class="token keyword">if</span> <span class="token punctuation">(</span>num <span class="token operator">%</span> <span class="token number">3</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            div <span class="token operator">=</span> num <span class="token operator">//</span> <span class="token number">3</span>
+            <span class="token keyword">return</span> <span class="token punctuation">[</span>div <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">,</span> div<span class="token punctuation">,</span> div <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span>
+        <span class="token keyword">return</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Time complexity: O(1)</p>
+<p>Space complexity: O(1)</p>
+<h4 id="Idea-2"><a href="#Idea-2" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li>simple math: only can form the sum of three consecutive integer when it’s divisible by 3</li>
+</ul>
+<h4 id="leetcode-2274-Maximum-Consecutive-Floors-Without-Special-Floors"><a href="#leetcode-2274-Maximum-Consecutive-Floors-Without-Special-Floors" class="headerlink" title="leetcode 2274. Maximum Consecutive Floors Without Special Floors"></a>leetcode 2274. Maximum Consecutive Floors Without Special Floors</h4><p>Alice manages a company and has rented some floors of a building as office space. Alice has decided some of these floors should be <strong>special floors</strong>, used for relaxation only.</p>
+<p>You are given two integers <code>bottom</code> and <code>top</code>, which denote that Alice has rented all the floors from <code>bottom</code> to <code>top</code> (<strong>inclusive</strong>). You are also given the integer array <code>special</code>, where <code>special[i]</code> denotes a special floor that Alice has designated for relaxation.</p>
+<p>Return <em>the <strong>maximum</strong> number of consecutive floors without a special floor</em>.</p>
+<p><strong>Example 1:</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">Input: bottom &#x3D; 2, top &#x3D; 9, special &#x3D; [4,6]
+Output: 3
+Explanation: The following are the ranges (inclusive) of consecutive floors without a special floor:
+- (2, 3) with a total amount of 2 floors.
+- (5, 5) with a total amount of 1 floor.
+- (7, 9) with a total amount of 3 floors.
+Therefore, we return the maximum number which is 3 floors.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Approach"><a href="#Approach" class="headerlink" title="Approach:"></a>Approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">maxConsecutive</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> bottom<span class="token punctuation">,</span> top<span class="token punctuation">,</span> special<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type bottom: int
+        :type top: int
+        :type special: List[int]
+        :rtype: int
+        """</span>
+
+        special<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        answer <span class="token operator">=</span> special<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">-</span> bottom <span class="token operator">+</span> <span class="token number">1</span>
+
+        <span class="token keyword">for</span> floor <span class="token keyword">in</span> special<span class="token punctuation">:</span>
+            answer <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>answer<span class="token punctuation">,</span> floor <span class="token operator">-</span> bottom<span class="token punctuation">)</span>
+            bottom <span class="token operator">=</span> floor
+
+        <span class="token keyword">return</span> <span class="token builtin">max</span><span class="token punctuation">(</span>answer<span class="token punctuation">,</span> top <span class="token operator">-</span> special<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Time complexity: O(nlogn)</p>
+<p>Space complexity: O(1)</p>
+<h4 id="Idea-3"><a href="#Idea-3" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li>select maximum value from <strong>:</strong><ul>
+<li>Difference between bottom and least value of array</li>
+<li>Difference between largest value and top</li>
+<li>Difference between consecutive values in sorted order -1</li>
+</ul>
+</li>
+</ul>
 
                 
             </div>
@@ -474,8 +591,12 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/ceshi/">
-                                    <span class="chip bg-color">ceshi</span>
+                                <a href="/tags/Array/">
+                                    <span class="chip bg-color">Array</span>
+                                </a>
+                            
+                                <a href="/tags/HashMap/">
+                                    <span class="chip bg-color">HashMap</span>
                                 </a>
                             
                         </div>
@@ -524,12 +645,12 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/05/01/leetcode_permutation/">
+                <a href="/2022/06/08/leetcode_array1/">
                     <div class="card-image">
                         
-                        <img src="https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg" class="responsive-img" alt="Leetcode Permutation">
+                        <img src="https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg" class="responsive-img" alt="Leetcode Array - Intervals Related">
                         
-                        <span class="card-title">Leetcode Permutation</span>
+                        <span class="card-title">Leetcode Array - Intervals Related</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -540,7 +661,7 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-01
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-08
                         </span>
                         <span class="publish-author">
                             
@@ -565,16 +686,8 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
                         <span class="chip bg-color">Array</span>
                     </a>
                     
-                    <a href="/tags/Recursion/">
-                        <span class="chip bg-color">Recursion</span>
-                    </a>
-                    
-                    <a href="/tags/Backtracking/">
-                        <span class="chip bg-color">Backtracking</span>
-                    </a>
-                    
-                    <a href="/tags/Math/">
-                        <span class="chip bg-color">Math</span>
+                    <a href="/tags/Sorting/">
+                        <span class="chip bg-color">Sorting</span>
                     </a>
                     
                     <a href="/tags/Two-Pointers/">
@@ -592,13 +705,12 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/28/hello-world/">
+                <a href="/2022/06/04/leetcode_sort/">
                     <div class="card-image">
                         
+                        <img src="https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg" class="responsive-img" alt="Leetcode Sorting Related">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Leetcode Sorting Related</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -609,15 +721,39 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-04
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Yicheng Wang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/leetcode/" class="post-category">
+                                    leetcode
+                                </a>
+                            
+                            <a href="/categories/leetcode/algorithm/" class="post-category">
+                                    algorithm
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Array/">
+                        <span class="chip bg-color">Array</span>
+                    </a>
+                    
+                    <a href="/tags/Sorting/">
+                        <span class="chip bg-color">Sorting</span>
+                    </a>
+                    
+                    <a href="/tags/Two-Pointers/">
+                        <span class="chip bg-color">Two Pointers</span>
+                    </a>
+                    
                 </div>
                 
             </div>

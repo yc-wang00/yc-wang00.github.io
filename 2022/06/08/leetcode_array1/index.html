@@ -4,10 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="YC">
-    <meta name="description" content="Leetcode rotated sorted arrayLeetcode 33, 81, 153, 154
-variations of rotated sorted array
-TAGS: Array, Pointers, Binary ">
+    <meta name="keywords" content="Leetcode Array - Intervals Related, YC">
+    <meta name="description" content="Leetcode Array - Intervals Relatedleetcode 56, 435, 252, 253 
+TAGS: Array, Sorting, Two Pointers
+leetcode 56 Merge Inter">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -21,7 +21,7 @@ TAGS: Array, Pointers, Binary ">
 
     
 
-    <title>YC</title>
+    <title>Leetcode Array - Intervals Related | YC</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -267,12 +267,12 @@ TAGS: Array, Pointers, Binary ">
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title"></h1>
+                    <h1 class="description center-align post-title">Leetcode Array - Intervals Related</h1>
                 </div>
             </div>
         </div>
@@ -386,12 +386,37 @@ TAGS: Array, Pointers, Binary ">
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/Array/">
+                                <span class="chip bg-color">Array</span>
+                            </a>
+                        
+                            <a href="/tags/Sorting/">
+                                <span class="chip bg-color">Sorting</span>
+                            </a>
+                        
+                            <a href="/tags/Two-Pointers/">
+                                <span class="chip bg-color">Two Pointers</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/leetcode/" class="post-category">
+                                leetcode
+                            </a>
+                        
+                            <a href="/categories/leetcode/algorithm/" class="post-category">
+                                algorithm
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -400,7 +425,7 @@ TAGS: Array, Pointers, Binary ">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-05-31
+                    2022-06-08
                 </div>
                 
 
@@ -424,190 +449,145 @@ TAGS: Array, Pointers, Binary ">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Leetcode-rotated-sorted-array"><a href="#Leetcode-rotated-sorted-array" class="headerlink" title="Leetcode rotated sorted array"></a>Leetcode rotated sorted array</h1><p>Leetcode 33, 81, 153, 154</p>
-<p>variations of rotated sorted array</p>
-<p><strong>TAGS: Array, Pointers, Binary Search</strong></p>
-<h3 id="leetcode-33-Search-in-Rotated-Sorted-Array"><a href="#leetcode-33-Search-in-Rotated-Sorted-Array" class="headerlink" title="leetcode 33 Search in Rotated Sorted Array"></a>leetcode 33 Search in Rotated Sorted Array</h3><p>There is an integer array <code>nums</code> sorted in ascending order (with <strong>distinct</strong> values).</p>
-<p>Prior to being passed to your function, <code>nums</code> is <strong>possibly rotated</strong> at an unknown pivot index <code>k</code> (<code>1 &lt;= k &lt; nums.length</code>) such that the resulting array is <code>[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]</code> (<strong>0-indexed</strong>). For example, <code>[0,1,2,4,5,6,7]</code> might be rotated at pivot index <code>3</code> and become <code>[4,5,6,7,0,1,2]</code>.</p>
-<p>Given the array <code>nums</code> <strong>after</strong> the possible rotation and an integer <code>target</code>, return <em>the index of</em> <code>target</code> <em>if it is in</em> <code>nums</code><em>, or</em> <code>-1</code> <em>if it is not in</em> <code>nums</code>.</p>
-<p>You must write an algorithm with <code>O(log n)</code> runtime complexity.</p>
+                <h1 id="Leetcode-Array-Intervals-Related"><a href="#Leetcode-Array-Intervals-Related" class="headerlink" title="Leetcode Array - Intervals Related"></a>Leetcode Array - Intervals Related</h1><p>leetcode 56, 435, 252, 253 </p>
+<p><strong>TAGS: Array, Sorting, Two Pointers</strong></p>
+<h3 id="leetcode-56-Merge-Intervals"><a href="#leetcode-56-Merge-Intervals" class="headerlink" title="leetcode 56 Merge Intervals"></a>leetcode 56 Merge Intervals</h3><p>Given an array of <code>intervals</code> where <code>intervals[i] = [starti, endi]</code>, merge all overlapping intervals, and return <em>an array of the non-overlapping intervals that cover all the intervals in the input</em>.</p>
 <p><strong>Example 1:</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">Input: nums &#x3D; [4,5,6,7,0,1,2], target &#x3D; 0
-Output: 4<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">Input: intervals &#x3D; [[1,3],[2,6],[8,10],[15,18]]
+Output: [[1,6],[8,10],[15,18]]
+Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6].<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <h4 id="My-approach"><a href="#My-approach" class="headerlink" title="My approach:"></a>My approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">search</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">,</span> target<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">merge</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> intervals<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token triple-quoted-string string">"""
-        :type nums: List[int]
-        :type target: int
+        :type intervals: List[List[int]]
+        :rtype: List[List[int]]
+        """</span>
+        <span class="token keyword">if</span> <span class="token keyword">not</span> intervals<span class="token punctuation">:</span>
+            <span class="token keyword">return</span>
+        <span class="token comment"># sort the intervals by first element</span>
+        intervals <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>intervals<span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span> x<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        start_i <span class="token operator">=</span> intervals<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+        end_i <span class="token operator">=</span> intervals<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+        res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i<span class="token punctuation">,</span>interval <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>intervals<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> i <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                <span class="token keyword">continue</span>
+
+            <span class="token keyword">if</span> end_i <span class="token operator">>=</span> interval<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token keyword">and</span> end_i <span class="token operator">&lt;=</span> interval<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+                end_i <span class="token operator">=</span> interval<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+            <span class="token keyword">elif</span> end_i <span class="token operator">></span> interval<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+                <span class="token keyword">continue</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                res<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">[</span>start_i<span class="token punctuation">,</span> end_i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+                start_i <span class="token operator">=</span> interval<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span>
+                end_i <span class="token operator">=</span> interval<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span>
+        res<span class="token punctuation">.</span>append<span class="token punctuation">(</span><span class="token punctuation">[</span>start_i<span class="token punctuation">,</span> end_i<span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li>sort the intervals by first element and then check forward</li>
+</ul>
+<p>Time complexity: O(nlogn)</p>
+<p>Space complexity: O(n)</p>
+<h4 id="Other-approach"><a href="#Other-approach" class="headerlink" title="Other approach:"></a>Other approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">def</span> <span class="token function">merge</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> intervals<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    out <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+    <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>intervals<span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token keyword">lambda</span> i<span class="token punctuation">:</span> i<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token keyword">if</span> out <span class="token keyword">and</span> i<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;=</span> out<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+            out<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>out<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">else</span><span class="token punctuation">:</span>
+            out <span class="token operator">+=</span> i<span class="token punctuation">,</span>
+    <span class="token keyword">return</span> out<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Idea-1"><a href="#Idea-1" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li>sort the intervals by first element and then check backwards</li>
+<li>apparently make it shorter version</li>
+</ul>
+<p>Time complexity: O(nlogn)</p>
+<p>Space complexity: O(n)		</p>
+<h3 id="leetcode-435-Non-overlapping-Intervals"><a href="#leetcode-435-Non-overlapping-Intervals" class="headerlink" title="leetcode 435 Non-overlapping Intervals"></a>leetcode 435 Non-overlapping Intervals</h3><p>Given an array of intervals <code>intervals</code> where <code>intervals[i] = [starti, endi]</code>, return <em>the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping</em>.</p>
+<p><strong>Example 1:</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">Input: intervals &#x3D; [[1,2],[2,3],[3,4],[1,3]]
+Output: 1
+Explanation: [1,3] can be removed and the rest of the intervals are non-overlapping.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="My-approach-1"><a href="#My-approach-1" class="headerlink" title="My approach:"></a>My approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">eraseOverlapIntervals</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> intervals<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type intervals: List[List[int]]
         :rtype: int
         """</span>
-
-        left<span class="token punctuation">,</span> right <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
-        <span class="token keyword">while</span> left <span class="token operator">&lt;=</span> right<span class="token punctuation">:</span>
-            mid <span class="token operator">=</span> <span class="token punctuation">(</span>left <span class="token operator">+</span> right<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>
-
-            <span class="token comment"># target matches, return</span>
-            <span class="token keyword">if</span> target <span class="token operator">==</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">:</span>
-                <span class="token keyword">return</span> mid
-
-            <span class="token comment"># means left sideis sorted</span>
-            <span class="token keyword">elif</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">>=</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">:</span>
-                <span class="token comment"># target inside the interval</span>
-                <span class="token keyword">if</span> target <span class="token operator">>=</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token keyword">and</span> target <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">:</span>
-                    right <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span>
-                <span class="token keyword">else</span><span class="token punctuation">:</span>
-                    left <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span>
-            <span class="token comment"># means right side is sorted</span>
+        res <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span>
+        count <span class="token operator">=</span><span class="token number">0</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span>intervals<span class="token punctuation">,</span> key<span class="token operator">=</span><span class="token keyword">lambda</span> i<span class="token punctuation">:</span> i<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> res <span class="token keyword">and</span> i<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> res<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+                res<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token builtin">min</span><span class="token punctuation">(</span>res<span class="token punctuation">[</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> i<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+                count <span class="token operator">+=</span> <span class="token number">1</span>
             <span class="token keyword">else</span><span class="token punctuation">:</span>
-                <span class="token keyword">if</span> target <span class="token operator">></span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token keyword">and</span> target <span class="token operator">&lt;=</span> nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">:</span>
-                    left <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span>
-                <span class="token keyword">else</span><span class="token punctuation">:</span>
-                    right <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span>
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                res<span class="token punctuation">.</span>append<span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+        <span class="token keyword">return</span> count<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>Time complexity: O(log n)   </p>
-<p>Space Complexity: O(1)</p>
-<h4 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h4><p>For shifted sorted array, we can always use binary search: </p>
-<ul>
-<li>1- take the middle and compare with target, if matches return.</li>
-<li>2- if middle is bigger than left side, it means left is sorted<ul>
-<li>2a- if [left] &lt; target &lt; [middle] then do recursion with left, middle - 1 (right)</li>
-<li>2b- left side is sorted, but target not in here, search on right side middle + 1 (left), right</li>
+<p>Time complexity: O(nlogn)</p>
+<p>Space complexity: O(n)		</p>
+<h4 id="Idea-2"><a href="#Idea-2" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li>same idea with above but when iterating through the interval, add the min of end time instead of max because we want non-overlapping.</li>
 </ul>
-</li>
-<li>3- if middle is less than right side, it means right is sorted<ul>
-<li>3a- if [middle] &lt; target &lt; [right] then do recursion with middle + 1 (left), right</li>
-<li>3b- right side is sorted, but target not in here, search on left side left, middle -1 (right)</li>
-</ul>
-</li>
-</ul>
-<h3 id="leetcode-81-Search-in-Rotated-Sorted-Array-II"><a href="#leetcode-81-Search-in-Rotated-Sorted-Array-II" class="headerlink" title="leetcode 81 Search in Rotated Sorted Array II"></a>leetcode 81 Search in Rotated Sorted Array II</h3><p>There is an integer array <code>nums</code> sorted in non-decreasing order (not necessarily with <strong>distinct</strong> values).</p>
-<p>Before being passed to your function, <code>nums</code> is <strong>rotated</strong> at an unknown pivot index <code>k</code> (<code>0 &lt;= k &lt; nums.length</code>) such that the resulting array is <code>[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]</code> (<strong>0-indexed</strong>). For example, <code>[0,1,2,4,4,4,5,6,6,7]</code> might be rotated at pivot index <code>5</code> and become <code>[4,5,6,6,7,0,1,2,4,4]</code>.</p>
-<p>Given the array <code>nums</code> <strong>after</strong> the rotation and an integer <code>target</code>, return <code>true</code> <em>if</em> <code>target</code> <em>is in</em> <code>nums</code><em>, or</em> <code>false</code> <em>if it is not in</em> <code>nums</code><em>.</em></p>
-<p>You must decrease the overall operation steps as much as possible.</p>
+<h3 id="leetcode-252-Meeting-Rooms"><a href="#leetcode-252-Meeting-Rooms" class="headerlink" title="leetcode 252 Meeting Rooms"></a>leetcode 252 Meeting Rooms</h3><p>Given an array of meeting time <code>intervals</code> where <code>intervals[i] = [starti, endi]</code>, determine if a person could attend all meetings.</p>
 <p><strong>Example 1:</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">Input: nums &#x3D; [2,5,6,0,0,1,2], target &#x3D; 0
-Output: true<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-<h4 id="My-approach-1"><a href="#My-approach-1" class="headerlink" title="My approach:"></a>My approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">left<span class="token punctuation">,</span> right <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
-<span class="token keyword">while</span> left <span class="token operator">&lt;=</span> right<span class="token punctuation">:</span>
-    mid <span class="token operator">=</span> <span class="token punctuation">(</span>left <span class="token operator">+</span> right<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>
-
-    <span class="token comment"># target matches, return</span>
-    <span class="token keyword">if</span> target <span class="token operator">==</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">:</span>
-        <span class="token keyword">return</span> <span class="token boolean">True</span>
-
-    <span class="token comment"># means left sideis sorted</span>
-    <span class="token keyword">elif</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">></span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">:</span>
-        <span class="token comment"># target inside the interval</span>
-        <span class="token keyword">if</span> target <span class="token operator">>=</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token keyword">and</span> target <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span><span class="token punctuation">:</span>
-            right <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span>
-        <span class="token keyword">else</span><span class="token punctuation">:</span>
-            left <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span>
-    <span class="token comment"># means right side is sorted</span>
-    <span class="token keyword">elif</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">:</span>
-        <span class="token keyword">if</span> target <span class="token operator">></span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token keyword">and</span> target <span class="token operator">&lt;=</span> nums<span class="token punctuation">[</span>right<span class="token punctuation">]</span><span class="token punctuation">:</span>
-            left <span class="token operator">=</span> mid <span class="token operator">+</span> <span class="token number">1</span>
-        <span class="token keyword">else</span><span class="token punctuation">:</span>
-            right <span class="token operator">=</span> mid <span class="token operator">-</span> <span class="token number">1</span>
-    <span class="token comment"># when we are not sure which side is sorted, increment left </span>
-    <span class="token keyword">else</span><span class="token punctuation">:</span>
-        left <span class="token operator">+=</span> <span class="token number">1</span>
-<span class="token keyword">return</span> <span class="token boolean">False</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>Time complexity: O(log n)   </p>
-<p>Space Complexity: O(1)</p>
-<h4 id="Idea-1"><a href="#Idea-1" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
-<li>same algorithm with the first one, simply add a constraint to handle the boundary case.</li>
-</ul>
-<h3 id="leetcode-153-Find-Minimum-in-Rotated-Sorted-Array"><a href="#leetcode-153-Find-Minimum-in-Rotated-Sorted-Array" class="headerlink" title="leetcode 153 Find Minimum in Rotated Sorted Array"></a>leetcode 153 Find Minimum in Rotated Sorted Array</h3><p>Suppose an array of length <code>n</code> sorted in ascending order is <strong>rotated</strong> between <code>1</code> and <code>n</code> times. For example, the array <code>nums = [0,1,2,4,5,6,7]</code> might become:</p>
-<ul>
-<li><code>[4,5,6,7,0,1,2]</code> if it was rotated <code>4</code> times.</li>
-<li><code>[0,1,2,4,5,6,7]</code> if it was rotated <code>7</code> times.</li>
-</ul>
-<p>Notice that <strong>rotating</strong> an array <code>[a[0], a[1], a[2], ..., a[n-1]]</code> 1 time results in the array <code>[a[n-1], a[0], a[1], a[2], ..., a[n-2]]</code>.</p>
-<p>Given the sorted rotated array <code>nums</code> of <strong>unique</strong> elements, return <em>the minimum element of this array</em>.</p>
-<p>You must write an algorithm that runs in <code>O(log n) time.</code></p>
-<p><strong>Example 1:</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">Input: nums &#x3D; [3,4,5,1,2]
-Output: 1
-Explanation: The original array was [1,2,3,4,5] rotated 3 times.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
-
-
+<pre class="line-numbers language-none"><code class="language-none">Input: intervals &#x3D; [[0,30],[5,10],[15,20]]
+Output: false<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
 <h4 id="My-approach-2"><a href="#My-approach-2" class="headerlink" title="My approach:"></a>My approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">findMin</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">canAttendMeetings</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> intervals<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token triple-quoted-string string">"""
-        :type nums: List[int]
-        :rtype: int
+        :type intervals: List[List[int]]
+        :rtype: bool
         """</span>
-        <span class="token builtin">min</span> <span class="token operator">=</span>  <span class="token number">9999</span>
-        left<span class="token punctuation">,</span> right <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
-        <span class="token keyword">while</span> left <span class="token operator">&lt;=</span> right<span class="token punctuation">:</span>
-            mid <span class="token operator">=</span> <span class="token punctuation">(</span>left <span class="token operator">+</span> right<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>
+        <span class="token comment"># sort the intervals by first element</span>
+        intervals<span class="token punctuation">.</span>sort<span class="token punctuation">(</span>key<span class="token operator">=</span><span class="token keyword">lambda</span> x<span class="token punctuation">:</span>x<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>intervals<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> intervals<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token operator">&lt;</span> intervals<span class="token punctuation">[</span>i <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+                <span class="token keyword">return</span> <span class="token boolean">False</span>
+        <span class="token keyword">return</span> <span class="token boolean">True</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-            <span class="token comment"># means left sideis sorted</span>
-            <span class="token keyword">if</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">>=</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">:</span>
-                <span class="token keyword">if</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">&lt;</span> <span class="token builtin">min</span><span class="token punctuation">:</span>
-                    <span class="token builtin">min</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span>
-                left <span class="token operator">=</span> mid <span class="token operator">+</span><span class="token number">1</span>
-            <span class="token comment"># means right side is sorted</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                <span class="token keyword">if</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&lt;</span> <span class="token builtin">min</span><span class="token punctuation">:</span>
-                    <span class="token builtin">min</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span>
-                right <span class="token operator">=</span> mid <span class="token operator">-</span><span class="token number">1</span>
-        <span class="token keyword">return</span> <span class="token builtin">min</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>Time complexity: O(log n)   </p>
-<p>Space Complexity: O(1)</p>
-<h4 id="Idea-2"><a href="#Idea-2" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
-<li>using the same idea (binary search), every time check if the leftmost number is the smallest</li>
-</ul>
-<h3 id="leetcode-154-Find-Minimum-in-Rotated-Sorted-Array-II"><a href="#leetcode-154-Find-Minimum-in-Rotated-Sorted-Array-II" class="headerlink" title="leetcode 154 Find Minimum in Rotated Sorted Array II"></a>leetcode 154 Find Minimum in Rotated Sorted Array II</h3><p>Suppose an array of length <code>n</code> sorted in ascending order is <strong>rotated</strong> between <code>1</code> and <code>n</code> times. For example, the array <code>nums = [0,1,4,4,5,6,7]</code> might become:</p>
-<ul>
-<li><code>[4,5,6,7,0,1,4]</code> if it was rotated <code>4</code> times.</li>
-<li><code>[0,1,4,4,5,6,7]</code> if it was rotated <code>7</code> times.</li>
-</ul>
-<p>Notice that <strong>rotating</strong> an array <code>[a[0], a[1], a[2], ..., a[n-1]]</code> 1 time results in the array <code>[a[n-1], a[0], a[1], a[2], ..., a[n-2]]</code>.</p>
-<p>Given the sorted rotated array <code>nums</code> that may contain <strong>duplicates</strong>, return <em>the minimum element of this array</em>.</p>
-<p>You must decrease the overall operation steps as much as possible.</p>
-<p><strong>Example 1:</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">Input: nums &#x3D; [1,3,5]
-Output: 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
-
-
-
-<h4 id="My-approach-3"><a href="#My-approach-3" class="headerlink" title="My approach:"></a>My approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">findMin</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token triple-quoted-string string">"""
-        :type nums: List[int]
-        :rtype: int
-        """</span>
-        <span class="token builtin">min</span> <span class="token operator">=</span>  <span class="token number">9999</span>
-        left<span class="token punctuation">,</span> right <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span>
-        <span class="token keyword">while</span> left <span class="token operator">&lt;=</span> right<span class="token punctuation">:</span>
-            mid <span class="token operator">=</span> <span class="token punctuation">(</span>left <span class="token operator">+</span> right<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span>
-
-            <span class="token comment"># means left sideis sorted</span>
-            <span class="token keyword">if</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">></span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">:</span>
-                <span class="token keyword">if</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span> <span class="token operator">&lt;</span> <span class="token builtin">min</span><span class="token punctuation">:</span>
-                    <span class="token builtin">min</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span>
-                left <span class="token operator">=</span> mid <span class="token operator">+</span><span class="token number">1</span>
-            <span class="token comment"># means right side is sorted</span>
-            <span class="token keyword">elif</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>left<span class="token punctuation">]</span><span class="token punctuation">:</span>
-                <span class="token keyword">if</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span> <span class="token operator">&lt;</span> <span class="token builtin">min</span><span class="token punctuation">:</span>
-                    <span class="token builtin">min</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>mid<span class="token punctuation">]</span>
-                right <span class="token operator">=</span> mid <span class="token operator">-</span><span class="token number">1</span>
-            <span class="token comment"># when we are not sure which side is sorted, increment left</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                left <span class="token operator">+=</span><span class="token number">1</span>
-        <span class="token keyword">return</span> <span class="token builtin">min</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>Time complexity: O(log n)   </p>
-<p>Space Complexity: O(1)</p>
+<p>Time complexity: O(nlogn)</p>
+<p>Space complexity: O(1)	</p>
 <h4 id="Idea-3"><a href="#Idea-3" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
-<li>combination of Find Minimum in Rotated Sorted Array and Search in Rotated Sorted Array II</li>
+<li>same with above: sort and check</li>
+</ul>
+<h3 id="leetcode-253-Meeting-Rooms-II"><a href="#leetcode-253-Meeting-Rooms-II" class="headerlink" title="leetcode 253 Meeting Rooms II"></a>leetcode 253 Meeting Rooms II</h3><p>Given an array of meeting time intervals <code>intervals</code> where <code>intervals[i] = [starti, endi]</code>, return <em>the minimum number of conference rooms required</em>.</p>
+<p><strong>Example 1:</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">Input: intervals &#x3D; [[0,30],[5,10],[15,20]]
+Output: 2<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h4 id="My-approach-3"><a href="#My-approach-3" class="headerlink" title="My approach:"></a>My approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python">start <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token punctuation">[</span>i<span class="token punctuation">[</span><span class="token number">0</span><span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> intervals<span class="token punctuation">]</span><span class="token punctuation">)</span>
+end <span class="token operator">=</span> <span class="token builtin">sorted</span><span class="token punctuation">(</span><span class="token punctuation">[</span>i<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> intervals<span class="token punctuation">]</span><span class="token punctuation">)</span>
+i<span class="token punctuation">,</span>j <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span><span class="token number">0</span>
+
+count <span class="token operator">=</span> <span class="token number">0</span>
+max_count <span class="token operator">=</span> <span class="token number">0</span>
+
+<span class="token keyword">while</span> i <span class="token operator">&lt;</span> <span class="token builtin">len</span><span class="token punctuation">(</span>start<span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">if</span> start<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> end<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">:</span>
+        count <span class="token operator">+=</span><span class="token number">1</span>
+        i<span class="token operator">+=</span><span class="token number">1</span>
+    <span class="token keyword">else</span><span class="token punctuation">:</span>
+        j <span class="token operator">+=</span><span class="token number">1</span>
+        count <span class="token operator">-=</span><span class="token number">1</span>
+    max_count <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>max_count<span class="token punctuation">,</span> count<span class="token punctuation">)</span>
+    
+<span class="token keyword">return</span>  max_count<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Time complexity: O(nlogn)</p>
+<p>Space complexity: O(n)	</p>
+<h4 id="Idea-4"><a href="#Idea-4" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li><a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=FdzJmTCVyJU">https://www.youtube.com/watch?v=FdzJmTCVyJU</a> well explanation</li>
+<li>sort the start and end time into two arrays</li>
+<li>iterate through the array and check if start time is less than the end time<ul>
+<li>if yes, room +&#x3D;1, go to next start time</li>
+<li>if no, room -&#x3D;1, go to next end time</li>
+</ul>
+</li>
 </ul>
 
                 
@@ -622,7 +602,19 @@ Output: 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">No tag</span>
+                            
+                                <a href="/tags/Array/">
+                                    <span class="chip bg-color">Array</span>
+                                </a>
+                            
+                                <a href="/tags/Sorting/">
+                                    <span class="chip bg-color">Sorting</span>
+                                </a>
+                            
+                                <a href="/tags/Two-Pointers/">
+                                    <span class="chip bg-color">Two Pointers</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -669,13 +661,12 @@ Output: 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/05/31/leetcode_spiralMatrix/">
+                <a href="/2022/06/09/leetcode_mathSimulation/">
                     <div class="card-image">
                         
+                        <img src="https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg" class="responsive-img" alt="Leetcode Math Simulation Related">
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="">
-                        
-                        <span class="card-title"></span>
+                        <span class="card-title">Leetcode Math Simulation Related</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -686,15 +677,39 @@ Output: 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-31
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-09
                         </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Yicheng Wang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/leetcode/" class="post-category">
+                                    leetcode
+                                </a>
+                            
+                            <a href="/categories/leetcode/algorithm/" class="post-category">
+                                    algorithm
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Math/">
+                        <span class="chip bg-color">Math</span>
+                    </a>
+                    
+                    <a href="/tags/String/">
+                        <span class="chip bg-color">String</span>
+                    </a>
+                    
+                    <a href="/tags/Simulation/">
+                        <span class="chip bg-color">Simulation</span>
+                    </a>
+                    
                 </div>
                 
             </div>
@@ -706,13 +721,12 @@ Output: 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/05/01/leetcode_permutation/">
+                <a href="/2022/06/07/leetcode_array2/">
                     <div class="card-image">
                         
+                        <img src="https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg" class="responsive-img" alt="Leetcode Array - Longest Consecutive Sequence Related">
                         
-                        <img src="/medias/featureimages/21.jpg" class="responsive-img" alt="Leetcode Permutation">
-                        
-                        <span class="card-title">Leetcode Permutation</span>
+                        <span class="card-title">Leetcode Array - Longest Consecutive Sequence Related</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -723,7 +737,7 @@ Output: 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-05-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-07
                             </span>
                         <span class="publish-author">
                             
@@ -748,20 +762,8 @@ Output: 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
                         <span class="chip bg-color">Array</span>
                     </a>
                     
-                    <a href="/tags/Recursion/">
-                        <span class="chip bg-color">Recursion</span>
-                    </a>
-                    
-                    <a href="/tags/Backtracking/">
-                        <span class="chip bg-color">Backtracking</span>
-                    </a>
-                    
-                    <a href="/tags/Pointers/">
-                        <span class="chip bg-color">Pointers</span>
-                    </a>
-                    
-                    <a href="/tags/Math/">
-                        <span class="chip bg-color">Math</span>
+                    <a href="/tags/HashMap/">
+                        <span class="chip bg-color">HashMap</span>
                     </a>
                     
                 </div>
@@ -873,6 +875,13 @@ Output: 1<span aria-hidden="true" class="line-numbers-rows"><span></span><span><
 
 </main>
 
+
+<script src="https://cdn.bootcss.com/mathjax/2.7.5/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script>
+    MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$', '$'], ['\\(', '\\)']]}
+    });
+</script>
 
 
 

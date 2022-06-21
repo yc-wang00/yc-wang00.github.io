@@ -4,13 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="test, YC">
-    <meta name="description" content="Write Something For Testing&amp;#x2F;paragraph 
-$this is an equation$
-​	x^2 &amp;#x3D; 2
-&amp;#x2F;end{equation}
-$x*2$
- $f(x)&amp;#x3D;x">
+    <meta name="keywords" content="Leetcode Sorting Related, YC">
+    <meta name="description" content="Leetcode Sorting Relatedleetcode 75, 280, 324
+TAGS: Array, Sorting, Two Pointers
+leetcode 75 sort colorsGiven an array n">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +21,7 @@ $x*2$
 
     
 
-    <title>test | YC</title>
+    <title>Leetcode Sorting Related | YC</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -275,7 +272,7 @@ $x*2$
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">test</h1>
+                    <h1 class="description center-align post-title">Leetcode Sorting Related</h1>
                 </div>
             </div>
         </div>
@@ -391,8 +388,16 @@ $x*2$
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/ceshi/">
-                                <span class="chip bg-color">ceshi</span>
+                            <a href="/tags/Array/">
+                                <span class="chip bg-color">Array</span>
+                            </a>
+                        
+                            <a href="/tags/Sorting/">
+                                <span class="chip bg-color">Sorting</span>
+                            </a>
+                        
+                            <a href="/tags/Two-Pointers/">
+                                <span class="chip bg-color">Two Pointers</span>
                             </a>
                         
                     </div>
@@ -403,8 +408,12 @@ $x*2$
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/categories/diyi/" class="post-category">
-                                diyi
+                            <a href="/categories/leetcode/" class="post-category">
+                                leetcode
+                            </a>
+                        
+                            <a href="/categories/leetcode/algorithm/" class="post-category">
+                                algorithm
                             </a>
                         
                     </div>
@@ -416,7 +425,7 @@ $x*2$
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-04-28
+                    2022-06-04
                 </div>
                 
 
@@ -440,26 +449,153 @@ $x*2$
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h2 id="Write-Something-For-Testing"><a href="#Write-Something-For-Testing" class="headerlink" title="Write Something For Testing"></a>Write Something For Testing</h2><p>&#x2F;paragraph </p>
-<p>$this is an equation$</p>
-<p>​	x^2 &#x3D; 2</p>
-<p>&#x2F;end{equation}</p>
-<p>$x*2$</p>
-<p> $f(x)&#x3D;x_{1}^{2}+x_{2}^{2}$ </p>
-<pre class="line-numbers language-python" data-language="python"><code class="language-python">To explain<span class="token punctuation">,</span> lets assume that $\text<span class="token punctuation">&#123;</span>rev<span class="token punctuation">&#125;</span>$ <span class="token keyword">is</span> positive<span class="token punctuation">.</span>
+                <h1 id="Leetcode-Sorting-Related"><a href="#Leetcode-Sorting-Related" class="headerlink" title="Leetcode Sorting Related"></a>Leetcode Sorting Related</h1><p>leetcode 75, 280, 324</p>
+<p><strong>TAGS: Array, Sorting, Two Pointers</strong></p>
+<h3 id="leetcode-75-sort-colors"><a href="#leetcode-75-sort-colors" class="headerlink" title="leetcode 75 sort colors"></a>leetcode 75 sort colors</h3><p>Given an array <code>nums</code> with <code>n</code> objects colored red, white, or blue, sort them <strong><a target="_blank" rel="noopener" href="https://en.wikipedia.org/wiki/In-place_algorithm">in-place</a></strong> so that objects of the same color are adjacent, with the colors in the order red, white, and blue.</p>
+<p>We will use the integers <code>0</code>, <code>1</code>, and <code>2</code> to represent the color red, white, and blue, respectively.</p>
+<p>You must solve this problem without using the library’s sort function.</p>
+<p><strong>Example 1:</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">Input: nums &#x3D; [2,0,2,1,1,0]
+Output: [0,0,1,1,2,2]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<span class="token number">1.</span> If $temp<span class="token operator">=</span>rev\cdot10<span class="token operator">+</span>pop$ causes overflow<span class="token punctuation">,</span> then it must be that $rev\geq\frac<span class="token punctuation">&#123;</span>INTMAX<span class="token punctuation">&#125;</span><span class="token punctuation">&#123;</span><span class="token number">10</span><span class="token punctuation">&#125;</span>$
-<span class="token number">2.</span> If $rev<span class="token operator">></span>\frac<span class="token punctuation">&#123;</span>INTMAX<span class="token punctuation">&#125;</span><span class="token punctuation">&#123;</span><span class="token number">10</span><span class="token punctuation">&#125;</span>$<span class="token punctuation">,</span> then $temp<span class="token operator">=</span>rev\cdot10<span class="token operator">+</span>pop$ <span class="token keyword">is</span> guaranteed to overflow<span class="token punctuation">.</span>
-<span class="token number">3.</span> If $rev<span class="token operator">==</span>\frac<span class="token punctuation">&#123;</span>INTMAX<span class="token punctuation">&#125;</span><span class="token punctuation">&#123;</span><span class="token number">10</span><span class="token punctuation">&#125;</span>$<span class="token punctuation">,</span> then $temp<span class="token operator">=</span>rev\cdot10<span class="token operator">+</span>pop$ will overflow <span class="token keyword">if</span> <span class="token keyword">and</span> only <span class="token keyword">if</span> $pop<span class="token operator">></span><span class="token number">7</span>$
+<h4 id="My-approach-two-pass"><a href="#My-approach-two-pass" class="headerlink" title="My approach: (two pass)"></a>My approach: (two pass)</h4><ul>
+<li>counting sort:<ul>
+<li>count occurrences and then update the list</li>
+</ul>
+</li>
+<li>two-pass approach</li>
+</ul>
+<p>Time complexity: O(n)</p>
+<p>Space complexity: O(1)</p>
+<h3 id="One-pass-approach-one-pass"><a href="#One-pass-approach-one-pass" class="headerlink" title="One pass approach: (one pass)"></a>One pass approach: (one pass)</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">sortColors</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """</span>
+        l<span class="token punctuation">,</span> r <span class="token operator">=</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token operator">-</span><span class="token number">1</span>
+        i <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">def</span> <span class="token function">swap</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
 
-Similar logic can be applied when $\text<span class="token punctuation">&#123;</span>rev<span class="token punctuation">&#125;</span>$ <span class="token keyword">is</span> negati<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+        <span class="token keyword">while</span> i <span class="token operator">&lt;=</span> r<span class="token punctuation">:</span>
+            <span class="token keyword">if</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                swap<span class="token punctuation">(</span>l<span class="token punctuation">,</span>i<span class="token punctuation">)</span>
+                l<span class="token operator">+=</span><span class="token number">1</span>
+            <span class="token keyword">elif</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">==</span> <span class="token number">2</span><span class="token punctuation">:</span>
+                swap<span class="token punctuation">(</span>i<span class="token punctuation">,</span>r<span class="token punctuation">)</span>
+                r <span class="token operator">-=</span> <span class="token number">1</span>
+                <span class="token keyword">continue</span>
+            i <span class="token operator">+=</span> <span class="token number">1</span>
+        <span class="token keyword">return</span> nums<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>$$<br>x^2 is trash<br>$$</p>
-<pre class="line-numbers language-latex" data-language="latex"><code class="language-latex">/begin<span class="token punctuation">&#123;</span>equation<span class="token punctuation">&#125;</span>
-	<span class="token equation string">$x^2$</span>
-/end<span class="token punctuation">&#123;</span>equation<span class="token punctuation">&#125;</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+<p>Time complexity: O(n)</p>
+<p>Space complexity: O(1)</p>
+<h4 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li>using three pointers to keep all zeros at left side and all twos at right side </li>
+<li>one pass</li>
+</ul>
+<h3 id="leetcode-280-Wiggle-Sort"><a href="#leetcode-280-Wiggle-Sort" class="headerlink" title="leetcode 280 Wiggle Sort"></a>leetcode 280 Wiggle Sort</h3><p>Given an integer array <code>nums</code>, reorder it such that <code>nums[0] &lt;= nums[1] &gt;= nums[2] &lt;= nums[3]...</code>.</p>
+<p>You may assume the input array always has a valid answer.</p>
+<p><strong>Example 1:</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">Input: nums &#x3D; [3,5,2,1,6,4]
+Output: [3,5,1,6,2,4]
+Explanation: [1,6,2,5,3,4] is also accepted.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<p>asd</p>
+
+
+<h4 id="My-approach"><a href="#My-approach" class="headerlink" title="My approach:"></a>My approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">wiggleSort</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        Do not return anything, modify nums in-place instead.
+        """</span>
+        nums<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">//</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">,</span> <span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            nums<span class="token punctuation">.</span>insert<span class="token punctuation">(</span>i<span class="token punctuation">,</span> nums<span class="token punctuation">.</span>pop<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Time complexity: O(nlogn)</p>
+<p>Space complexity: O(1)</p>
+<h4 id="Idea-1"><a href="#Idea-1" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li>sort the list </li>
+<li>split into larger part and smaller part, insert every larger number into the smaller ones.</li>
+</ul>
+<h3 id="Other-Approach"><a href="#Other-Approach" class="headerlink" title="Other Approach:"></a>Other Approach:</h3><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">wiggleSort</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """</span>
+        <span class="token keyword">def</span> <span class="token function">swap</span><span class="token punctuation">(</span>i<span class="token punctuation">,</span>j<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>j<span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token comment"># check even i</span>
+            <span class="token keyword">if</span> i <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span><span class="token punctuation">:</span>
+                <span class="token comment"># check if it's less than the next element</span>
+                <span class="token keyword">if</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">></span> nums<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+                    swap<span class="token punctuation">(</span>i<span class="token punctuation">,</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+            <span class="token comment"># check odd i</span>
+            <span class="token keyword">else</span><span class="token punctuation">:</span>
+                <span class="token comment"># check if it's larger than the next element</span>
+                <span class="token keyword">if</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">:</span>
+                    swap<span class="token punctuation">(</span>i<span class="token punctuation">,</span>i<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> nums
+    
+<span class="token comment">#compact way of writing </span>
+<span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">wiggleSort</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">:</span> List<span class="token punctuation">[</span><span class="token builtin">int</span><span class="token punctuation">]</span><span class="token punctuation">)</span> <span class="token operator">-</span><span class="token operator">></span> <span class="token boolean">None</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        Do not return anything, modify nums in-place instead.
+        """</span>
+        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">-</span> <span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> <span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">0</span> <span class="token keyword">and</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">></span> nums<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token punctuation">)</span> <span class="token keyword">or</span> <span class="token punctuation">(</span>i <span class="token operator">%</span> <span class="token number">2</span> <span class="token operator">==</span> <span class="token number">1</span> <span class="token keyword">and</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> nums<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+                    nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span>i <span class="token operator">+</span> <span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Time complexity: O(n)</p>
+<p>Space complexity: O(1)</p>
+<h4 id="Idea-2"><a href="#Idea-2" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li><p>loop through the list by index</p>
+</li>
+<li><p>when index is even:</p>
+<ul>
+<li>check if the number is less than the next element<ul>
+<li>if yes, do nothing</li>
+<li>if no, swap</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>when index is odd:</p>
+<ul>
+<li>check if the number is larger than the next element<ul>
+<li>if yes, do nothing</li>
+<li>if no, swap</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="leetcode-324-Wiggle-Sort-II"><a href="#leetcode-324-Wiggle-Sort-II" class="headerlink" title="leetcode 324 Wiggle Sort II"></a>leetcode 324 Wiggle Sort II</h3><p>Given an integer array <code>nums</code>, reorder it such that <code>nums[0] &lt; nums[1] &gt; nums[2] &lt; nums[3]...</code>.</p>
+<p>You may assume the input array always has a valid answer.</p>
+<p><strong>Example 1:</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">Input: nums &#x3D; [1,5,1,1,6,4]
+Output: [1,6,1,5,1,4]
+Explanation: [1,4,1,5,1,6] is also accepted.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
+<h4 id="Approach"><a href="#Approach" class="headerlink" title="Approach:"></a>Approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">wiggleSort</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type nums: List[int]
+        :rtype: None Do not return anything, modify nums in-place instead.
+        """</span>
+        nums<span class="token punctuation">.</span>sort<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        half <span class="token operator">=</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        nums<span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token number">2</span><span class="token punctuation">]</span> <span class="token operator">=</span> nums<span class="token punctuation">[</span><span class="token punctuation">:</span>half<span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">,</span> nums<span class="token punctuation">[</span>half<span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p>Time complexity: O(nlogn)</p>
+<p>Space complexity: O(1)</p>
+<h4 id="Idea-3"><a href="#Idea-3" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
+<li>split into half and then insert larger at even index and smaller at odd index with reversed order</li>
+</ul>
 
                 
             </div>
@@ -474,8 +610,16 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/ceshi/">
-                                    <span class="chip bg-color">ceshi</span>
+                                <a href="/tags/Array/">
+                                    <span class="chip bg-color">Array</span>
+                                </a>
+                            
+                                <a href="/tags/Sorting/">
+                                    <span class="chip bg-color">Sorting</span>
+                                </a>
+                            
+                                <a href="/tags/Two-Pointers/">
+                                    <span class="chip bg-color">Two Pointers</span>
                                 </a>
                             
                         </div>
@@ -524,12 +668,12 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
             <div class="card">
-                <a href="/2022/05/01/leetcode_permutation/">
+                <a href="/2022/06/07/leetcode_array2/">
                     <div class="card-image">
                         
-                        <img src="https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg" class="responsive-img" alt="Leetcode Permutation">
+                        <img src="https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg" class="responsive-img" alt="Leetcode Array - Longest Consecutive Sequence Related">
                         
-                        <span class="card-title">Leetcode Permutation</span>
+                        <span class="card-title">Leetcode Array - Longest Consecutive Sequence Related</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -540,7 +684,7 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-05-01
+                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-07
                         </span>
                         <span class="publish-author">
                             
@@ -565,20 +709,8 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
                         <span class="chip bg-color">Array</span>
                     </a>
                     
-                    <a href="/tags/Recursion/">
-                        <span class="chip bg-color">Recursion</span>
-                    </a>
-                    
-                    <a href="/tags/Backtracking/">
-                        <span class="chip bg-color">Backtracking</span>
-                    </a>
-                    
-                    <a href="/tags/Math/">
-                        <span class="chip bg-color">Math</span>
-                    </a>
-                    
-                    <a href="/tags/Two-Pointers/">
-                        <span class="chip bg-color">Two Pointers</span>
+                    <a href="/tags/HashMap/">
+                        <span class="chip bg-color">HashMap</span>
                     </a>
                     
                 </div>
@@ -592,13 +724,12 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/04/28/hello-world/">
+                <a href="/2022/06/03/leetcode_rotatedSortedArray/">
                     <div class="card-image">
                         
+                        <img src="https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg" class="responsive-img" alt="Leetcode Rotated Sorted Array">
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
-                        
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">Leetcode Rotated Sorted Array</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -609,15 +740,39 @@ Similar logic can be applied when $\text<span class="token punctuation">&#123;</
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-04-28
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-03
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            Yicheng Wang
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/leetcode/" class="post-category">
+                                    leetcode
+                                </a>
+                            
+                            <a href="/categories/leetcode/algorithm/" class="post-category">
+                                    algorithm
+                                </a>
+                            
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/Array/">
+                        <span class="chip bg-color">Array</span>
+                    </a>
+                    
+                    <a href="/tags/Two-Pointers/">
+                        <span class="chip bg-color">Two Pointers</span>
+                    </a>
+                    
+                    <a href="/tags/Binary-Search/">
+                        <span class="chip bg-color">Binary Search</span>
+                    </a>
+                    
                 </div>
                 
             </div>
