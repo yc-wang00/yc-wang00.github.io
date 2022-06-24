@@ -4,9 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Leetcode Array - Gas Station, YC">
-    <meta name="description" content="Leetcode Array - Gas Stationleetcode 134, 2202
-leetcode 134. Gas StationThere are n gas stations along a circular route,">
+    <meta name="keywords" content="Leetcode String - Reverse Words in a String, YC">
+    <meta name="description" content="Leetcode String - Reverse Words in a Stringleetcode 151, 186
+leetcode 151. Reverse Words in a StringGiven an input strin">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -20,7 +20,7 @@ leetcode 134. Gas StationThere are n gas stations along a circular route,">
 
     
 
-    <title>Leetcode Array - Gas Station | YC</title>
+    <title>Leetcode String - Reverse Words in a String | YC</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.min.css">
@@ -271,7 +271,7 @@ leetcode 134. Gas StationThere are n gas stations along a circular route,">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Leetcode Array - Gas Station</h1>
+                    <h1 class="description center-align post-title">Leetcode String - Reverse Words in a String</h1>
                 </div>
             </div>
         </div>
@@ -387,12 +387,8 @@ leetcode 134. Gas StationThere are n gas stations along a circular route,">
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Array/">
-                                <span class="chip bg-color">Array</span>
-                            </a>
-                        
-                            <a href="/tags/Greedy/">
-                                <span class="chip bg-color">Greedy</span>
+                            <a href="/tags/String/">
+                                <span class="chip bg-color">String</span>
                             </a>
                         
                     </div>
@@ -420,7 +416,7 @@ leetcode 134. Gas StationThere are n gas stations along a circular route,">
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>Publish Date:&nbsp;&nbsp;
-                    2022-06-22
+                    2022-06-24
                 </div>
                 
 
@@ -444,121 +440,55 @@ leetcode 134. Gas StationThere are n gas stations along a circular route,">
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Leetcode-Array-Gas-Station"><a href="#Leetcode-Array-Gas-Station" class="headerlink" title="Leetcode Array - Gas Station"></a>Leetcode Array - Gas Station</h1><p>leetcode 134, 2202</p>
-<h3 id="leetcode-134-Gas-Station"><a href="#leetcode-134-Gas-Station" class="headerlink" title="leetcode 134. Gas Station"></a>leetcode 134. Gas Station</h3><p>There are <code>n</code> gas stations along a circular route, where the amount of gas at the <code>ith</code> station is <code>gas[i]</code>.</p>
-<p>You have a car with an unlimited gas tank and it costs <code>cost[i]</code> of gas to travel from the <code>ith</code> station to its next <code>(i + 1)th</code> station. You begin the journey with an empty tank at one of the gas stations.</p>
-<p>Given two integer arrays <code>gas</code> and <code>cost</code>, return <em>the starting gas station’s index if you can travel around the circuit once in the clockwise direction, otherwise return</em> <code>-1</code>. If there exists a solution, it is <strong>guaranteed</strong> to be <strong>unique</strong></p>
+                <h1 id="Leetcode-String-Reverse-Words-in-a-String"><a href="#Leetcode-String-Reverse-Words-in-a-String" class="headerlink" title="Leetcode String - Reverse Words in a String"></a>Leetcode String - Reverse Words in a String</h1><p>leetcode 151, 186</p>
+<h3 id="leetcode-151-Reverse-Words-in-a-String"><a href="#leetcode-151-Reverse-Words-in-a-String" class="headerlink" title="leetcode 151. Reverse Words in a String"></a>leetcode 151. Reverse Words in a String</h3><p>Given an input string <code>s</code>, reverse the order of the <strong>words</strong>.</p>
+<p>A <strong>word</strong> is defined as a sequence of non-space characters. The <strong>words</strong> in <code>s</code> will be separated by at least one space.</p>
+<p>Return <em>a string of the words in reverse order concatenated by a single space.</em></p>
+<p><strong>Note</strong> that <code>s</code> may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.</p>
 <p><strong>Example 1:</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">Input: gas &#x3D; [1,2,3,4,5], cost &#x3D; [3,4,5,1,2]
-Output: 3
-Explanation:
-Start at station 3 (index 3) and fill up with 4 unit of gas. Your tank &#x3D; 0 + 4 &#x3D; 4
-Travel to station 4. Your tank &#x3D; 4 - 1 + 5 &#x3D; 8
-Travel to station 0. Your tank &#x3D; 8 - 2 + 1 &#x3D; 7
-Travel to station 1. Your tank &#x3D; 7 - 3 + 2 &#x3D; 6
-Travel to station 2. Your tank &#x3D; 6 - 4 + 3 &#x3D; 5
-Travel to station 3. The cost is 5. Your gas is just enough to travel back to station 3.
-Therefore, return 3 as the starting index.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+<pre class="line-numbers language-none"><code class="language-none">Input: s &#x3D; &quot;the sky is blue&quot;
+Output: &quot;blue is sky the&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<h4 id="My-approach-Time-limit-exceed"><a href="#My-approach-Time-limit-exceed" class="headerlink" title="My approach: (Time limit exceed)"></a>My approach: (Time limit exceed)</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">canCompleteCircuit</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> gas<span class="token punctuation">,</span> cost<span class="token punctuation">)</span><span class="token punctuation">:</span>
+<h4 id="My-approach"><a href="#My-approach" class="headerlink" title="My approach:"></a>My approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">reverseWords</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
         <span class="token triple-quoted-string string">"""
-        :type gas: List[int]
-        :type cost: List[int]
-        :rtype: int
+        :type s: str
+        :rtype: str
         """</span>
-        diff <span class="token operator">=</span> <span class="token punctuation">[</span>gas<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> cost<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>gas<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">]</span>
-        <span class="token keyword">if</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>diff<span class="token punctuation">)</span> <span class="token operator">&lt;</span><span class="token number">0</span><span class="token punctuation">:</span>
-            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span>
-        
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>diff<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-            <span class="token keyword">if</span> diff<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
-                <span class="token keyword">continue</span>
-            <span class="token keyword">else</span><span class="token punctuation">:</span>
-                newList <span class="token operator">=</span> diff<span class="token punctuation">[</span>i<span class="token punctuation">:</span><span class="token punctuation">]</span> <span class="token operator">+</span> diff<span class="token punctuation">[</span><span class="token punctuation">:</span>i<span class="token punctuation">]</span>
-        
-                sums <span class="token operator">=</span> <span class="token builtin">list</span><span class="token punctuation">(</span>itertools<span class="token punctuation">.</span>accumulate<span class="token punctuation">(</span>newList<span class="token punctuation">)</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> <span class="token string">' '</span><span class="token punctuation">.</span>join<span class="token punctuation">(</span>s<span class="token punctuation">.</span>split<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">:</span><span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+
+
+<h3 id="leetcode-186-Reverse-Words-in-a-String-II"><a href="#leetcode-186-Reverse-Words-in-a-String-II" class="headerlink" title="leetcode 186. Reverse Words in a String II"></a>leetcode 186. Reverse Words in a String II</h3><p>Given a character array <code>s</code>, reverse the order of the <strong>words</strong>.</p>
+<p>A <strong>word</strong> is defined as a sequence of non-space characters. The <strong>words</strong> in <code>s</code> will be separated by a single space.</p>
+<p>Your code must solve the problem <strong>in-place,</strong> i.e. without allocating extra space.</p>
+<p><strong>Example 1:</strong></p>
+<pre class="line-numbers language-none"><code class="language-none">Input: s &#x3D; [&quot;t&quot;,&quot;h&quot;,&quot;e&quot;,&quot; &quot;,&quot;s&quot;,&quot;k&quot;,&quot;y&quot;,&quot; &quot;,&quot;i&quot;,&quot;s&quot;,&quot; &quot;,&quot;b&quot;,&quot;l&quot;,&quot;u&quot;,&quot;e&quot;]
+Output: [&quot;b&quot;,&quot;l&quot;,&quot;u&quot;,&quot;e&quot;,&quot; &quot;,&quot;i&quot;,&quot;s&quot;,&quot; &quot;,&quot;s&quot;,&quot;k&quot;,&quot;y&quot;,&quot; &quot;,&quot;t&quot;,&quot;h&quot;,&quot;e&quot;]<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<h4 id="My-approach-1"><a href="#My-approach-1" class="headerlink" title="My approach:"></a>My approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
+    <span class="token keyword">def</span> <span class="token function">reverseWords</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+        <span class="token triple-quoted-string string">"""
+        :type s: List[str]
+        :rtype: None Do not return anything, modify s in-place instead.
+        """</span>
+        s<span class="token punctuation">.</span>reverse<span class="token punctuation">(</span><span class="token punctuation">)</span>
+        cur <span class="token operator">=</span> <span class="token number">0</span>
+        <span class="token keyword">for</span> i<span class="token punctuation">,</span>char <span class="token keyword">in</span> <span class="token builtin">enumerate</span><span class="token punctuation">(</span>s<span class="token punctuation">)</span><span class="token punctuation">:</span>
+            <span class="token keyword">if</span> char <span class="token operator">==</span> <span class="token string">' '</span><span class="token punctuation">:</span>
+                s<span class="token punctuation">[</span>cur<span class="token punctuation">:</span>i<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token builtin">reversed</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>cur<span class="token punctuation">:</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
                 
-                <span class="token keyword">if</span> <span class="token keyword">not</span> <span class="token builtin">any</span><span class="token punctuation">(</span>n <span class="token operator">&lt;</span> <span class="token number">0</span> <span class="token keyword">for</span> n <span class="token keyword">in</span> sums<span class="token punctuation">)</span><span class="token punctuation">:</span>
-                    <span class="token keyword">return</span> i
-        <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span> <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>Time complexity: O(n^2)</p>
-<p>Space complexity: O(n)</p>
-<h4 id="Approach-Greedy"><a href="#Approach-Greedy" class="headerlink" title="Approach: (Greedy)"></a>Approach: (Greedy)</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">canCompleteCircuit</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> gas<span class="token punctuation">,</span> cost<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token triple-quoted-string string">"""
-        :type gas: List[int]
-        :type cost: List[int]
-        :rtype: int
-        """</span>
-        <span class="token keyword">if</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>gas<span class="token punctuation">)</span> <span class="token operator">&lt;</span> <span class="token builtin">sum</span><span class="token punctuation">(</span>cost<span class="token punctuation">)</span><span class="token punctuation">:</span>
-            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span>
-        total <span class="token operator">=</span> <span class="token number">0</span>
-        res <span class="token operator">=</span> <span class="token number">0</span>
-        
-        <span class="token keyword">for</span> i <span class="token keyword">in</span> <span class="token builtin">range</span><span class="token punctuation">(</span><span class="token builtin">len</span><span class="token punctuation">(</span>gas<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-            total <span class="token operator">+=</span> <span class="token punctuation">(</span>gas<span class="token punctuation">[</span>i<span class="token punctuation">]</span> <span class="token operator">-</span> cost<span class="token punctuation">[</span>i<span class="token punctuation">]</span><span class="token punctuation">)</span>
-            <span class="token keyword">if</span> total <span class="token operator">&lt;</span> <span class="token number">0</span><span class="token punctuation">:</span>
-                total <span class="token operator">=</span> <span class="token number">0</span>
-                res <span class="token operator">=</span> i<span class="token operator">+</span><span class="token number">1</span>
-        <span class="token keyword">return</span> res<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+                i <span class="token operator">+=</span><span class="token number">1</span>
+                cur <span class="token operator">=</span> i
+        s<span class="token punctuation">[</span>cur<span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token operator">=</span> <span class="token builtin">reversed</span><span class="token punctuation">(</span>s<span class="token punctuation">[</span>cur<span class="token punctuation">:</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+        <span class="token keyword">return</span> s 
+    <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
 <p>Time complexity: O(n)</p>
 <p>Space complexity: O(1)</p>
 <h4 id="Idea"><a href="#Idea" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
-<li><p>if sum of gas is larger or equal to sum of cost, that means there must be one solution for this problem, so if not, return -1</p>
-</li>
-<li><p>we only need to scan the array once, cumulative sum up the difference between gas and cost, if negative, skipping that index, if positive, continue scanning, if the total cumsum of diff stays positive to the end of the array, then we find the starting index and return.</p>
-</li>
-<li><p><strong>core idea</strong>: no need to get back to those negative value we have already scanned because of ‘<strong>greedy</strong>‘</p>
-</li>
-</ul>
-<h3 id="leetcode-2202-Maximize-the-Topmost-Element-After-K-Moves"><a href="#leetcode-2202-Maximize-the-Topmost-Element-After-K-Moves" class="headerlink" title="leetcode 2202. Maximize the Topmost Element After K Moves"></a>leetcode 2202. Maximize the Topmost Element After K Moves</h3><p>You are given a <strong>0-indexed</strong> integer array <code>nums</code> representing the contents of a <strong>pile</strong>, where <code>nums[0]</code> is the topmost element of the pile.</p>
-<p>In one move, you can perform <strong>either</strong> of the following:</p>
-<ul>
-<li>If the pile is not empty, <strong>remove</strong> the topmost element of the pile.</li>
-<li>If there are one or more removed elements, <strong>add</strong> any one of them back onto the pile. This element becomes the new topmost element.</li>
-</ul>
-<p>You are also given an integer <code>k</code>, which denotes the total number of moves to be made.</p>
-<p>Return <em>the <strong>maximum value</strong> of the topmost element of the pile possible after <strong>exactly</strong></em> <code>k</code> <em>moves</em>. In case it is not possible to obtain a non-empty pile after <code>k</code> moves, return <code>-1</code>.</p>
-<p><strong>Example 1:</strong></p>
-<pre class="line-numbers language-none"><code class="language-none">Input: nums &#x3D; [5,2,2,4,0,6], k &#x3D; 4
-Output: 5
-Explanation:
-One of the ways we can end with 5 at the top of the pile after 4 moves is as follows:
-- Step 1: Remove the topmost element &#x3D; 5. The pile becomes [2,2,4,0,6].
-- Step 2: Remove the topmost element &#x3D; 2. The pile becomes [2,4,0,6].
-- Step 3: Remove the topmost element &#x3D; 2. The pile becomes [4,0,6].
-- Step 4: Add 5 back onto the pile. The pile becomes [5,4,0,6].
-Note that this is not the only way to end with 5 at the top of the pile. It can be shown that 5 is the largest answer possible after 4 moves.<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-
-
-<h4 id="My-Approach"><a href="#My-Approach" class="headerlink" title="My Approach:"></a>My Approach:</h4><pre class="line-numbers language-python" data-language="python"><code class="language-python"><span class="token keyword">class</span> <span class="token class-name">Solution</span><span class="token punctuation">(</span><span class="token builtin">object</span><span class="token punctuation">)</span><span class="token punctuation">:</span>
-    <span class="token keyword">def</span> <span class="token function">maximumTop</span><span class="token punctuation">(</span>self<span class="token punctuation">,</span> nums<span class="token punctuation">,</span> k<span class="token punctuation">)</span><span class="token punctuation">:</span>
-        <span class="token triple-quoted-string string">"""
-        :type nums: List[int]
-        :type k: int
-        :rtype: int
-        """</span>
-        <span class="token keyword">if</span> <span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span> <span class="token operator">==</span> <span class="token number">1</span> <span class="token keyword">and</span> k<span class="token operator">%</span><span class="token number">2</span> <span class="token operator">==</span> <span class="token number">1</span><span class="token punctuation">:</span>
-            <span class="token keyword">return</span> <span class="token operator">-</span><span class="token number">1</span>
-        
-        <span class="token keyword">if</span> k <span class="token operator">&lt;=</span> <span class="token number">1</span><span class="token punctuation">:</span>
-            <span class="token keyword">return</span> nums<span class="token punctuation">[</span>k<span class="token punctuation">]</span>
-        
-        res <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>nums<span class="token punctuation">[</span><span class="token punctuation">:</span>k<span class="token operator">+</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
-        <span class="token keyword">if</span> nums<span class="token punctuation">[</span><span class="token punctuation">(</span>k<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token operator">%</span><span class="token builtin">len</span><span class="token punctuation">(</span>nums<span class="token punctuation">)</span><span class="token punctuation">]</span> <span class="token operator">==</span> res<span class="token punctuation">:</span>
-            new_l <span class="token operator">=</span> nums<span class="token punctuation">[</span><span class="token punctuation">:</span>k<span class="token operator">-</span><span class="token number">1</span><span class="token punctuation">]</span><span class="token operator">+</span> <span class="token punctuation">[</span>nums<span class="token punctuation">[</span>k<span class="token punctuation">]</span><span class="token punctuation">]</span>
-            res <span class="token operator">=</span> <span class="token builtin">max</span><span class="token punctuation">(</span>new_l<span class="token punctuation">)</span>
-        <span class="token keyword">return</span> res
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
-
-<p>Time complexity: O(n)</p>
-<p>Space complexity: O(1)</p>
-<h4 id="Idea-1"><a href="#Idea-1" class="headerlink" title="Idea:"></a>Idea:</h4><ul>
-<li>to understand what value to return to get maximum value</li>
+<li>Reverse the array and then reverse each words</li>
 </ul>
 
                 
@@ -574,12 +504,8 @@ Note that this is not the only way to end with 5 at the top of the pile. It can 
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Array/">
-                                    <span class="chip bg-color">Array</span>
-                                </a>
-                            
-                                <a href="/tags/Greedy/">
-                                    <span class="chip bg-color">Greedy</span>
+                                <a href="/tags/String/">
+                                    <span class="chip bg-color">String</span>
                                 </a>
                             
                         </div>
@@ -624,9 +550,10 @@ Note that this is not the only way to end with 5 at the top of the pile. It can 
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;Previous</div>
+                <i class="far fa-dot-circle"></i>&nbsp;Current
+            </div>
             <div class="card">
                 <a href="/2022/06/24/leetcode_string1/">
                     <div class="card-image">
@@ -643,9 +570,9 @@ Note that this is not the only way to end with 5 at the top of the pile. It can 
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2022-06-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -662,6 +589,7 @@ Note that this is not the only way to end with 5 at the top of the pile. It can 
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -680,12 +608,12 @@ Note that this is not the only way to end with 5 at the top of the pile. It can 
                 Next&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2022/06/09/leetcode_mathSimulation/">
+                <a href="/2022/06/22/leetcode_array3/">
                     <div class="card-image">
                         
-                        <img src="https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg" class="responsive-img" alt="Leetcode Math Simulation Related">
+                        <img src="https://s2.loli.net/2022/06/22/vWV3MPOHyDnfBlu.jpg" class="responsive-img" alt="Leetcode Array - Gas Station">
                         
-                        <span class="card-title">Leetcode Math Simulation Related</span>
+                        <span class="card-title">Leetcode Array - Gas Station</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -696,7 +624,7 @@ Note that this is not the only way to end with 5 at the top of the pile. It can 
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2022-06-22
                             </span>
                         <span class="publish-author">
                             
@@ -717,16 +645,12 @@ Note that this is not the only way to end with 5 at the top of the pile. It can 
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Math/">
-                        <span class="chip bg-color">Math</span>
+                    <a href="/tags/Array/">
+                        <span class="chip bg-color">Array</span>
                     </a>
                     
-                    <a href="/tags/String/">
-                        <span class="chip bg-color">String</span>
-                    </a>
-                    
-                    <a href="/tags/Simulation/">
-                        <span class="chip bg-color">Simulation</span>
+                    <a href="/tags/Greedy/">
+                        <span class="chip bg-color">Greedy</span>
                     </a>
                     
                 </div>
